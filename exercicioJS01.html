@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio alert</title>
+</head>
+<body>
+
+<h1>Alertas</h1>
+
+    <script>
+
+//window.prompt('Qual é o seu nome?');
+//window.prompt('Qual é a sua idade?');
+//window.prompt('Qual o nome do seu familiar mais proximo?');
+//window.prompt('Qual a idade do seu familiar mais proximo?');
+
+var nome = window.prompt('Qual é o seu nome?');
+//var nome = "Kennedy";
+var idade = window.prompt('Qual é a sua idade?');
+var nomeFamiliar = window.prompt('Qual o nome do seu familiar mais proximo?');
+var idadeFamiliar = window.prompt('Qual a idade do seu familiar mais proximo?');
+
+var data = new Date();
+var dia = data.getDate();
+var mes = data.getMonth();
+var ano = data.getFullYear();
+var dataCompleta = data.toLocaleDateString();
+
+
+//document.write("<p>Meu nome é:"+nome+"</p>");
+//document.write("<p>Minha idade é:"+idade+"</p>");
+//document.write("<p>O nome do meu familiar é:"+nomeFamiliar+"</p>");
+//document.write("<p>Idade do meu familiar é:"+idadeFamiliar+"</p>");
+//document.write("<p>Data de inscrição:"+dataCompleta+"</p>");
+
+
+document.write("<p>Meu nome é:"+nome+"</p> <br> <p>Minha idade é:"+idade+"</p> <br> <p>O nome do meu familiar é:"+nomeFamiliar+"</p> <br>");
+
+
+
+console.log(nome);
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

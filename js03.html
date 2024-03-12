@@ -13,11 +13,22 @@
     <script>
         //alert('funcionou!');
         var curso ="Desenvolvedor Front-end";
-        var data = new Date ();
-document.write(data);
-console.log(data);
-alert(curso);
+        var nome = "Kennedy"
+        var data = new Date();
+        var dia = data.getDate();
+        var mes = data.getMonth()+1; //É preciso acrescentar uma posição para dar um 'get' na lista correta (contagem numerica em programação começa em "0")
+var ano = data.getFullYear();
+var dataCompleta = data.toLocaleDateString();
 
+//document.write(ano);
+//console.log(data);
+//alert(curso);
+alert(dataCompleta);
+
+//document.write("<p>Olá me chamo <b>"+nome+"</b>, estudo "+curso+", no SENAC. Hoje é "+dia+"/"+mes+"/"+ano+".</p>");
+document.write("<p>Olá me chamo <b>"+nome+"</b>, estudo "+curso+", no SENAC. Hoje é "+dataCompleta+".</p>");
+
+console.log("Olá me chamo"+nome+", estudo"+curso+", no SENAC. Hoje é:"+dataCompleta);
 
     </script>
 
