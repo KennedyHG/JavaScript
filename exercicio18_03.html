@@ -8,31 +8,28 @@
 <body>
     <div>
         
-<img id="lampadaace" src="img/luz.jpg" alt="lampada"
-onmouseenter="acender()">
+<img src="img/apagada.jpg" id="lampap" alt="lampada apagada"
+onmouseenter="acender()" onmouseout="apagar()">
         
-        <img id="lampadaapa" src="img/apagada.jpg" alt="lampada" onmouseout="apagar()">
-
-<img id="lampadaqu" src="img/quebrada.jpg" alt="lampada">
 
     </div>
     
     <script>
 
-var lampac = window.document.getElementById ('lampadaace');
-var lampap = window.document.getElementById ('lampadaapa');
+
+var apagada = document.getElementById ('lampap');
 lamp.addEventListener('click' ,clicar);
 
 
-function acender(){
-    lampac.document.getElementById ('lampadaace');
+function apagada(){
+    apagada.scr = 'img/apagada.jpg'; 
+}
     
+function apagada(){
+    apagada.scr = 'img/luz.jpg';
 }
     
 
-function apagar(){
-    lampap.document.getElementById ('lampap');
-}
 
 
 
