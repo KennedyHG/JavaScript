@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Array</title>
+</head>
+<body>
+<p>Exercício 1: Encontrar o maior número em um array.</p>
+<br>
+<p>Exercício 2: Calcular a média dos números em um array.</p>
+<br>
+<p>Exercício 3: Verificar se um elemento existe em um array.</p>
+<br>
+<p>Exercício 4: Contar o número de elementos pares em um array.</p>
+<br>
+<p>Exercício 5: Concatenar arrays.</p>
+    <script>
+//ex.1 - Encontrar o maior número em um array.
+let numeros = [];
+
+
+numeros [0] = prompt('Digite um numero de 0 a 10:');
+numeros [1] = prompt('Digite um numero de 0 a 10:');
+numeros [2] = prompt('Digite um numero de 0 a 10:');
+numeros [3] = prompt('Digite um numero de 0 a 10:');
+
+console.log(numeros);
+let maior = Math.max(...numeros);
+console.log(maior);
+
+//--------------------------------------------------------------
+
+
+//ex.2 - Calcular a média dos números em um array.
+let soma = 0;
+for(let i = 0; i< numeros.length; i++){
+    soma += numeros[i]
+}
+let media = soma/numeros.length;
+console.log(media);
+
+// let number = [1, 4, 5, 6, 9, 2]
+// console.log('Indice do numero ' +number.indexOf('5'))
+
+//--------------------------------------------------------------
+
+//ex.3 - Verificar se um elemento existe em um array.
+
+function verificar (analisar) {
+    let names = ['José', 'João', 'Maria', 'Luiz'];
+    if (names.indexOf (Maria) != -1);
+    console.log ('Encontrado');
+}else{
+console.log ('Não encontrado')
+
+}
+
+//--------------------------------------------------------------
+
+//ex.4 - Contar o número de elementos pares em um array.
+
+let numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let numerosPares = numeros.filter(pares=> (pares % 2) ==0);
+console.log("Numeros pares:" +numerosPares);
+
+
+
+//--------------------------------------------------------------
+
+//ex.5 - Concatenar arrays.
+
+const nomesUm = ["João, Marcelo, Julia"];
+const nomesDois = ["Robson, Gil, Caike"];
+
+const pessoas = nomesUm.concat(nomesDois);
+console.log(pessoas);
+
+
+    </script>
+    
+</body>
+
+
+</html>
