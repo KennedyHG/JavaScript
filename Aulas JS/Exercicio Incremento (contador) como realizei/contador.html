@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Contador</title>
+</head>
+<style>
+    #principal{
+        height: 50px;
+    
+    }
+  
+</style>
+
+<body>
+    <div id="principal">
+        <h1><strong>Contador</strong></h1>
+    </div>
+
+        <h2 id="contando"></h2>
+    
+
+    <div class="container">
+        <button onclick="decrementar()">decrementar</button>
+        <button onclick="resetar()">resetar</button>
+        <button onclick="incrementar()">incrementar</button>
+    </div>
+
+
+
+    <script>
+        //alert('oi');
+
+
+        var numeros = 0;
+
+        document.getElementById('contando').innerText = numeros;
+
+        function incrementar() {
+            numeros = numeros + 1;
+            document.getElementById('contando').innerText = numeros;
+            document.getElementById('contando').style.color = 'green'
+        }
+
+        function resetar() {
+            numeros = numeros = 0;
+            document.getElementById('contando').innerText = numeros;
+            document.getElementById('contando').style.color = 'black';
+            
+        }
+
+        function decrementar() {
+            numeros = numeros - 1;
+            document.getElementById('contando').innerText = numeros;
+            document.getElementById('contando').style.color = 'red';
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
