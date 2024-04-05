@@ -469,14 +469,33 @@ li {
     .card h5 {
         margin-top: 45px;
     }
-    .endereco{
+
+    .endereco {
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-top: 70px;
     }
 
-    .rodape-conteudo{
+    .rodape-conteudo {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 850px;
+    }
+    .rodape-conteudoo {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    
+    .logo-rodape {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 100px;
+
+    }
+
+    .menu-rodape {
         display: flex;
         justify-content: space-around;
     }
