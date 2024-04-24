@@ -29,6 +29,15 @@ console.log(numeros);
 let maior = Math.max(...numeros);
 console.log(maior);
 
+// correção
+
+function encontrarMaiorNumero(numeros) {
+    return Math.max (...numeros);
+}
+        var numeros = [10, 5, 8, 20, 15];
+        console.log("O maior numero é: " +encontrarMaiorNumero(numero));
+
+        
 //--------------------------------------------------------------
 
 
@@ -56,6 +65,16 @@ console.log ('Não encontrado')
 
 }
 
+        // correção
+
+function verificarElemento(array, elemento) {
+    return array.includes (elemento);
+}
+        var numeros = ["maça", "banana", "laranja"];
+        var elemento = "banana"
+        console.log("verificar elemento" +elemento+ "existe" verificarElemento(array,elemento));
+
+
 //--------------------------------------------------------------
 
 //ex.4 - Contar o número de elementos pares em um array.
@@ -70,12 +89,19 @@ console.log("Numeros pares:" +numerosPares);
 
 //ex.5 - Concatenar arrays.
 
-const nomesUm = ["João, Marcelo, Julia"];
-const nomesDois = ["Robson, Gil, Caike"];
+var nomesUm = ["João, Marcelo, Julia"];
+var nomesDois = ["Robson, Gil, Caike"];
 
-const pessoas = nomesUm.concat(nomesDois);
+var pessoas = nomesUm.concat(nomesDois);
 console.log(pessoas);
 
+        // correção
+
+var array1 = [1, 2, 3];
+var array2 = [10, 20, 30];
+
+var concatenarArray = [array1, array2];
+console.log(concatenarArray);
 
     </script>
     
